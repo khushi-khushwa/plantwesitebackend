@@ -28,7 +28,7 @@ export const applyService = async (req, res) => {
 export const getService = async (req, res) => {
   try {
     const allService = await BookingServices.find();
-    res.status(200).json(allService); // ✅ FIXED
+    res.status(200).json(allService);
   } catch (err) {
     res.status(500).json({
       message: "Error fetching services",

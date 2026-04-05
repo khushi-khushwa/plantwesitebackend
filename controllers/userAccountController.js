@@ -58,7 +58,7 @@ export const login = async (req, res) => {
             .status(200)
             .cookie("token", token, {
                 maxAge: 1 * 24 * 60 * 60 * 1000,
-                httpOnly: true,      // ✅ Bug 1 fixed: was 'httpsOnly'
+                httpOnly: true,      
                 sameSite: 'strict',
             })
             .json({ message: `Welcome back ${safeUser.name}`, user: safeUser, success: true });
