@@ -9,7 +9,8 @@ import OrderRoutes from './routes/orderroutes.js';
 import userAccount from './routes/userroutes.js';
 import wishlist from './routes/wishlist.js'
 import cart from './routes/cartroutes.js';
-import bookingServices from './routes/serviceroutes.js';
+// import bookingServices from './routes/serviceroutes.js';
+import bookingServices from './routes/serviceroutes.js'
 dotenv.config();
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
