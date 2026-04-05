@@ -33,7 +33,7 @@ app.use('/api/plants', plantRoutes);
 app.use('/api/order', OrderRoutes);
 app.use('/api/useraccount', userAccount);
 app.use('/api/wishlist',wishlist);
-app.use('/api/cart', cart)
+app.use('/api/cart', cart);
 app.use('/api/service', bookingServices)
 
 const PORT = process.env.PORT || 4000; 
