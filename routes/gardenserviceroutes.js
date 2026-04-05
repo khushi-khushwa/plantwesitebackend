@@ -1,6 +1,5 @@
 import express from "express";
-// import { getService,applyService,cancelService } from "../controllers/serviceApplyController.js";
-import { getService,applyService,cancelService } from "../controllers/serviceApplyController.js"
+import { getService, cancelService, applyService } from "../controllers/gardenserviceController.js";
 
 const router = express.Router();
 
