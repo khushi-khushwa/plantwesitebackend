@@ -1,0 +1,10 @@
+import express from "express";
+import { getService,applyService,cancelService } from "../controllers/serviceapplycontroller.js";
+
+const router = express.Router();
+
+router.post('/applyService', applyService);   // ✅ MUST
+router.get('/showService', getService);
+router.delete('/cancelService/:id', cancelService);
+
+export default router;
